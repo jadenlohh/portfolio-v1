@@ -1,0 +1,142 @@
+:root {
+    --navbar-height: 56px;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+h2 {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+body {
+    color: #212427;
+    overflow-x: hidden;
+    width: 100vw;
+}
+
+.highlight {
+    background-color: yellow;
+    display: inline-block;
+}
+
+.navbar {
+    height: var(--navbar-height);
+}
+
+.socials {
+    font-size: 22px;
+    position: fixed;
+    left: 20px;
+    text-align: center;
+    top: 42%;
+    width: 40px;
+}
+
+.socials a {
+    color: rgb(50, 50, 50);
+    top: 0;
+    transition: top ease 0.3s;
+    position: relative;
+    padding: 10px 0;
+}
+
+.socials a:hover {
+    top: -5px;
+}
+
+.nav-item a {
+    color: #212427;
+}
+
+.main {
+    height: calc(100vh - var(--navbar-height));
+}
+
+.main .text {
+    padding-left: 14%;
+    margin-top: 6%;
+}
+ 
+.main h1 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 55px;
+}
+
+.main p {
+    font-size: 18px;
+}
+
+#portrait {
+    border-radius: 50%;
+    width: 410px;
+    height: 410px;
+}
+
+#arrowDown {
+    animation: arrowDown 3s infinite;
+    bottom: 28px;
+    font-size: 24px;
+    left: 50%;
+    right: 50%;
+    position: absolute;
+    transform: translateX(-50%, -50%);
+}
+
+@keyframes arrowDown {
+    0% { bottom: 28px; }
+    50% { bottom: 15px; }
+    100% { bottom: 28px; }
+}
+
+#about {
+    height: calc(100vh - 120px);
+    padding-top: 120px;
+    margin-left: 14%;
+}
+
+#about h2 {
+    background: linear-gradient(to left, white 50%, yellow 50%) right;
+    background-size: 200%;
+    display: inline-block;
+    transition: 0.6s ease-in;
+}
+
+#project {
+    height: 100vh;
+    transition: ease-in 0.4s;
+}
+
+.language {
+    color: rgb(64, 64, 64);
+    font-size: 14px;
+    padding-right: 1rem;
+}
+
+#project h2 {
+    padding-top: 5%;
+}
+
+#project .col-md-4 div {
+    border: 1px solid rgb(64, 64, 64);
+    border-radius: 8px;
+    transition: 0.3s ease;
+}
+
+#project .col-md-4 div:hover {
+    transform: scale(1.04);
+}
