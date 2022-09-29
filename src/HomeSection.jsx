@@ -8,7 +8,7 @@ const HomeSection = () => {
         <>
             <Row className='main mt-5'>
                 <Col md='6' className='text'>
-                    <h1 className='maintext1 mb-0'>Hello!</h1>
+                    <h1 className='mb-0'>Hello!</h1>
                     <h1>I am Jaden</h1>
 
                     <p>A year 2 student studying at Nanyang Polytechnic</p>

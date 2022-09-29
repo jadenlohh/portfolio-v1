@@ -3,7 +3,7 @@ import React from 'react'
 const AboutSection = () => {
     return (
         <div id='about'>
-            <h2 id='aboutTitle'>About me</h2>
+            <h2 id='about-title'>About me</h2>
 
             <p className='mt-4' style={{'width': '60%'}}>
                 I am currently pursuing a Diploma in Information Technology at Nanyang Polytechnic. 

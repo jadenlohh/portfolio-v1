@@ -13,7 +13,7 @@ const NavigationBar = () => {
             </Nav.Item>
 
             <Nav.Item>
-                <Nav.Link href='/'>Projects</Nav.Link>
+                <Nav.Link href='#projects'>Projects</Nav.Link>
             </Nav.Item>
 
             <Nav.Item>
