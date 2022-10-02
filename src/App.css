@@ -123,10 +123,16 @@ h2 {
     transition: ease-in 0.4s;
 }
 
+/* .programming-language {
+    bottom: 30px;
+    position: absolute;
+} */
+
 .programming-language span {
-    color: rgb(64, 64, 64);
+    color: rgb(78, 78, 255);
     font-size: 14px;
-    padding-right: 1rem;
+    padding-right: 0.8rem;
+    width: 100px;
 }
 
 #projects h2 {
@@ -137,13 +143,33 @@ h2 {
     border: 1px solid rgb(64, 64, 64);
     border-radius: 8px;
     transition: 0.3s ease;
+    top: 0;
     padding: 24px;
+    position: relative;
+    margin: 0 1%;
+    width: 30% !important;
 }
 
 .project-card:hover {
-    transform: scale(1.03);
+    top: -8px;
 }
 
 .project-card i {
     font-size: 40px;
+}
+
+.project-links {
+    bottom: 16px; 
+    position: absolute; 
+    padding-right: 24px;
+    width: 100%; 
+}
+
+.project-links i {
+    font-size: 16px;
+}
+
+.project-links .btn-outline-dark:hover {
+    background-color: white !important;
+    color: #212529 !important;
 }
