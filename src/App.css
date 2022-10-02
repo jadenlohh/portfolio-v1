@@ -115,7 +115,7 @@ h2 {
     background: linear-gradient(to left, white 50%, yellow 50%) right;
     background-size: 200%;
     display: inline-block;
-    transition: 0.6s ease-in;
+    transition: 0.4s ease-in;
 }
 
 #projects {
@@ -123,13 +123,8 @@ h2 {
     transition: ease-in 0.4s;
 }
 
-/* .programming-language {
-    bottom: 30px;
-    position: absolute;
-} */
-
 .programming-language span {
-    color: rgb(78, 78, 255);
+    color: rgb(101, 101, 255);
     font-size: 14px;
     padding-right: 0.8rem;
     width: 100px;
