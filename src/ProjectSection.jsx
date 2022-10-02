@@ -18,9 +18,9 @@ const ProjectSection = () => {
 
             <Row className='gx-5 mt-4' style={{'display': 'flex', 'margin': '0 10% 0 14%'}}>
                 {
-                    projects.map(project => {
+                    projects.map((project, index) => {
                         return (
-                            <ProjectCard name={project.name} description={project.description} languages_url={project.languages_url} link={project.homepage} github_url={project.html_url} />
+                            <ProjectCard key={index} name={project.name} description={project.description} languages_url={project.languages_url} link={project.homepage} github_url={project.html_url} />
                         )
                     })
                 }

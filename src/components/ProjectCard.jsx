@@ -20,9 +20,9 @@ const ProjectCard = ({ name, description, languages_url, link, github_url }) => 
 
             <div className='programming-language pb-5'>
                 {
-                    Object.keys(languages).map(x => {
+                    Object.keys(languages).map((x, index) => {
                         return (
-                            <span>{x}</span>
+                            <span key={index}>{x}</span>
                         )
                     })
                 }
