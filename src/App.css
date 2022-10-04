@@ -23,7 +23,6 @@ body {
     /* background-image: url(./Images/dd.png); */
     background-repeat: no-repeat;
     color: #212427;
-    overflow-x: hidden;
 }
 
 h2 {
@@ -66,7 +65,8 @@ h2 {
 
 .main {
     height: calc(100vh - var(--navbar-height));
-    margin-top: 3rem !important;
+    padding-top: 3rem;
+    margin: auto !important;
 }
 
 .main .text {
@@ -189,14 +189,10 @@ h2 {
         display: none !important;
     }
 
-    .main {
-        margin-top: 3rem !important;
-    }
-
     .main .text {
         order: 2;
         padding: 9%;
-        margin-top: -10%;
+        margin-top: -18%;
     }
 
     .main h1 {
@@ -217,8 +213,8 @@ h2 {
     }
 
     #about {
-        height: 100vh;
-        padding-top: 5rem;
+        height: 85vh;
+        padding-top: 4rem;
     }
 
     #about p {
