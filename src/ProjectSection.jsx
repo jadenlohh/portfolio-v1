@@ -16,7 +16,7 @@ const ProjectSection = () => {
         <div id='projects'>
             <h2 className='text-center'>My Projects</h2>
 
-            <Row className='gx-5 mt-4' style={{'display': 'flex', 'margin': '0 10% 0 14%'}}>
+            <Row className='mt-4'>
                 {
                     projects.map((project, index) => {
                         return (

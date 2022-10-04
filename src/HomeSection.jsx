@@ -6,7 +6,7 @@ import './App.css'
 const HomeSection = () => {
     return (
         <>
-            <Row className='main mt-5'>
+            <Row className='main'>
                 <Col md='6' className='text'>
                     <h1 className='mb-0'>Hello!</h1>
                     <h1>I am Jaden</h1>
@@ -14,12 +14,12 @@ const HomeSection = () => {
                     <p>A year 2 student studying at Nanyang Polytechnic</p>
                 </Col>
 
-                <Col md='6' className='text-center'>
+                <Col md='6' className='portrait-container text-center'>
                     <Image fluid='true' src={Portrait} id='portrait' />
                 </Col>
             </Row>
 
-            <i className="fa-solid fa-chevron-down" id='arrowDown'></i>
+            <i className="fa-solid fa-chevron-down" id='arrow-down'></i>
         </>
     )
 }

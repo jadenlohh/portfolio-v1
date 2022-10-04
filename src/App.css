@@ -24,7 +24,6 @@ body {
     background-repeat: no-repeat;
     color: #212427;
     overflow-x: hidden;
-    width: 100vw;
 }
 
 h2 {
@@ -41,7 +40,7 @@ h2 {
 }
 
 .socials-bar {
-    font-size: 22px;
+    font-size: 1.38rem;
     position: fixed;
     left: 20px;
     text-align: center;
@@ -67,6 +66,7 @@ h2 {
 
 .main {
     height: calc(100vh - var(--navbar-height));
+    margin-top: 3rem !important;
 }
 
 .main .text {
@@ -76,11 +76,11 @@ h2 {
  
 .main h1 {
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 55px;
+    font-size: 3.44rem;
 }
 
 .main p {
-    font-size: 18px;
+    font-size: 1.13rem;
 }
 
 #portrait {
@@ -89,7 +89,7 @@ h2 {
     height: 390px;
 }
 
-#arrowDown {
+#arrow-down {
     animation: arrowDown 3s infinite;
     bottom: 28px;
     font-size: 24px;
@@ -106,8 +106,8 @@ h2 {
 }
 
 #about {
-    height: 100vh;
-    padding-top: 140px;
+    height: 96vh;
+    padding-top: 8rem;
     margin-left: 14%;
 }
 
@@ -118,9 +118,14 @@ h2 {
     transition: 0.4s ease-in;
 }
 
+#about p {
+    width: 80%;
+}
+
 #projects {
     height: 100vh;
     transition: ease-in 0.4s;
+    margin: 0 10% 0 14%;
 }
 
 .programming-language span {
@@ -135,22 +140,22 @@ h2 {
 }
 
 .project-card {
-    border: 1px solid rgb(64, 64, 64);
     border-radius: 8px;
     transition: 0.3s ease;
     top: 0;
-    padding: 24px;
     position: relative;
-    margin: 0 1%;
-    width: 30% !important;
 }
 
 .project-card:hover {
     top: -8px;
 }
 
+.project-card .card-body {
+    padding: 24px;
+}
+
 .project-card i {
-    font-size: 40px;
+    font-size: 2.5rem;
 }
 
 .project-links {
@@ -160,11 +165,92 @@ h2 {
     width: 100%; 
 }
 
+.project-links .view-btn-container {
+    padding: 0 0.25rem;
+}
+
 .project-links i {
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 .project-links .btn-outline-dark:hover {
     background-color: white !important;
     color: #212529 !important;
 }
+
+
+@media (max-width: 575.98px) {
+    .main, #about, #projects {
+        margin-left: 8%;
+        margin-right: 8%;
+    }
+
+    .socials-bar {
+        display: none !important;
+    }
+
+    .main {
+        margin-top: 3rem !important;
+    }
+
+    .main .text {
+        order: 2;
+        padding: 9%;
+        margin-top: -10%;
+    }
+
+    .main h1 {
+        font-size: 2.5rem;
+    }
+
+    .main .portrait-container {
+        order: 1;
+    }
+
+    #portrait {
+        height: 280px;
+        width: 280px;
+    }
+
+    #arrow-down {
+        display: none;
+    }
+
+    #about {
+        height: 100vh;
+        padding-top: 5rem;
+    }
+
+    #about p {
+        width: 100%;
+    }
+
+    .project-card .card-body {
+        padding-bottom: 8px;
+    }
+
+    .project-links {
+        position: relative;
+        padding-right: 0;
+        margin-right: 0;
+    }
+
+    .project-links .view-btn-container {
+        padding-left: 12px;
+    }
+
+    .project-links #view-btn {
+        margin-top: 0.5rem;
+    }
+}
+
+@media (min-width: 768px) {}
+
+
+@media (min-width: 992px) {}
+
+
+@media (min-width: 1200px) {}
+
+
+@media (min-width: 1400px) {}

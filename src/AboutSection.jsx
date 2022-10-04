@@ -5,7 +5,7 @@ const AboutSection = () => {
         <div id='about'>
             <h2 id='about-title'>About me</h2>
 
-            <p className='mt-4' style={{'width': '60%'}}>
+            <p className='mt-4'>
                 I am currently pursuing a Diploma in Information Technology at Nanyang Polytechnic. 
                 My interest in programming came about when I was in secondary school browsing through 
                 the different choices that are available in the polytechnics. I then started to research 
